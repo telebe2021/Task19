@@ -1,0 +1,1183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: monospace;
+}
+
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h2 {
+  font-family: fantasy;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  padding: 0 32px;
+}
+
+nav {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(147, 157, 167);
+}
+nav .ner {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .ner img {
+  width: auto;
+  height: 50px;
+}
+nav .ner ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+nav .ner ul a {
+  font-size: 22px;
+}
+nav .ner ul a:hover {
+  color: rgb(245, 96, 17);
+}
+nav .ner .nerc {
+  display: flex;
+  gap: 20px;
+}
+nav .ner .nerc a {
+  font-size: 24px;
+}
+nav .ner .nerc a:hover {
+  color: orange;
+}
+
+.foto1 {
+  width: 100%;
+  height: 843px;
+  background-color: antiquewhite;
+}
+.foto1 .row {
+  width: 100%;
+  height: 843px;
+  background-color: #1dce93;
+  flex-direction: row;
+  position: relative;
+}
+.foto1 .row .cam {
+  width: 100%;
+  height: 843px;
+  background-color: rgb(244, 225, 201);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.foto1 .row .cam .ulduz {
+  height: 171px;
+  width: 114px;
+}
+.foto1 .row .cam .ulduz img {
+  position: absolute;
+  height: 114px;
+  width: 114px;
+  top: 30px;
+}
+.foto1 .row .cam .sag {
+  width: 55%;
+  height: 100%;
+  background-color: rgb(244, 225, 201);
+  padding: 8% 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+.foto1 .row .cam .sag .shda {
+  width: 230px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  position: relative;
+}
+.foto1 .row .cam .sag .shda img {
+  width: 25px;
+  height: 25px;
+}
+.foto1 .row .cam .sag .shda h1 {
+  font-size: larger;
+}
+.foto1 .row .cam .sag h3 {
+  font-size: 70px;
+}
+.foto1 .row .cam .sag p {
+  font-size: 20px;
+}
+.foto1 .row .cam .sag button {
+  width: 250px;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: rgb(208, 102, 25);
+  color: #faf5f5;
+  position: absolute;
+  left: 112px;
+  bottom: 220px;
+}
+.foto1 .row .cam .sag button :hover {
+  border-radius: 10px;
+  color: rgb(220, 70, 15);
+  width: 250px;
+  height: 50px;
+  background: blue;
+}
+.foto1 .row .cam .sag .shda2 {
+  width: 80px;
+  height: 160px;
+  position: absolute;
+  bottom: 80px;
+  right: 340px;
+}
+.foto1 .row .cam .sag .shda2 img {
+  width: 100%;
+  height: 70%;
+  border: #1dce93;
+}
+.foto1 .row .cam .sol {
+  width: 38%;
+  height: 100%;
+  background-color: rgb(244, 225, 201);
+  position: relative;
+}
+.foto1 .row .cam .sol img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.foto2 {
+  width: 100%;
+  height: 843px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.foto2 .row {
+  width: 100%;
+  height: 843px;
+  background-color: #1dce93;
+  flex-direction: row;
+  position: relative;
+}
+.foto2 .row .cam {
+  width: 100%;
+  height: 843px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.foto2 .row .cam .foto2a {
+  width: 42%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.foto2 .row .cam .foto2a img {
+  width: 100%;
+  height: 100%;
+}
+.foto2 .row .cam .text {
+  width: 55%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 8% 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+  position: relative;
+}
+.foto2 .row .cam .text .shda {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  top: 40px;
+  position: absolute;
+}
+.foto2 .row .cam .text .shda .dad {
+  width: 230px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.foto2 .row .cam .text .shda img {
+  width: 25px;
+  height: 25px;
+}
+.foto2 .row .cam .text .shda h1 {
+  font-size: larger;
+}
+.foto2 .row .cam .text h3 {
+  font-size: 70px;
+}
+.foto2 .row .cam .text p {
+  font-size: 20px;
+}
+.foto2 .row .cam .text .twod {
+  width: 100%;
+  height: 50px;
+  bottom: -50px;
+  gap: 20px;
+  position: relative;
+}
+.foto2 .row .cam .text .twod .shda2 {
+  width: 30%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  gap: 10px;
+}
+.foto2 .row .cam .text .twod .shda2 img {
+  width: 40%;
+  height: 100%;
+}
+.foto2 .row .cam .text .twod .shda2 .spa {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.foto2 .row .cam .text .twod .shda2 .spa span {
+  width: 100px;
+  font-weight: 700;
+  color: #e05510;
+}
+.foto2 .row .cam .text .twod .shda2 .spa h1 {
+  font-size: 15px;
+}
+.foto2 .row .cam .text .twod .shda2b {
+  width: 30%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 0px;
+  gap: 10px;
+}
+.foto2 .row .cam .text .twod .shda2b img {
+  width: 40%;
+  height: 100%;
+}
+.foto2 .row .cam .text .twod .shda2b .spa {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.foto2 .row .cam .text .twod .shda2b .spa span {
+  width: 100px;
+  font-weight: 700;
+  color: #e05510;
+}
+.foto2 .row .cam .text .twod .shda2b .spa h1 {
+  font-size: 15px;
+}
+.foto2 .row .cam .nab {
+  width: 100%;
+  height: 160px;
+  background-color: #ffffff;
+  bottom: 125px;
+  display: flex;
+  position: absolute;
+  gap: 40px;
+}
+.foto2 .row .cam .nab .n4a {
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  position: absolute;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.foto2 .row .cam .nab .n4a .n1 {
+  width: 50%;
+  height: 60px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+}
+.foto2 .row .cam .nab .n4a .n1 i {
+  width: 25px;
+  height: 25px;
+}
+.foto2 .row .cam .nab .n4a .n1 h1 {
+  font-size: larger;
+}
+.foto2 .row .cam .nab .n4b {
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0px;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.foto2 .row .cam .nab .n4b .n1 {
+  width: 50%;
+  height: 60px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+}
+.foto2 .row .cam .nab .n4b .n1 i {
+  width: 25px;
+  height: 25px;
+}
+.foto2 .row .cam .nab .n4b .n1 h1 {
+  font-size: larger;
+}
+.foto2 .row .cam button {
+  width: 250px;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: rgb(208, 102, 25);
+  color: #faf5f5;
+  position: absolute;
+  left: 0px;
+  bottom: 70px;
+}
+.foto2 .row .cam button :hover {
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  background: blue;
+  color: rgb(220, 70, 15);
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  .foto2 .row .cam .foto2a {
+    width: 100%;
+  }
+  .foto2 .row .cam .text .shda .dad {
+    flex-direction: row;
+  }
+  .foto2 .row .cam .text .twod .shda2 {
+    width: 50%;
+  }
+  .foto2 .row .cam .text .twod .shda2b {
+    width: 50%;
+  }
+  .foto2 .row .cam .text .twod .nab .n4a {
+    width: 50%;
+  }
+  .foto2 .row .cam .text .twod .nab .n4b {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .foto2 .row .cam .foto2a img {
+    width: 100%;
+  }
+  .foto2 .row .cam .text .shda .dad {
+    flex-direction: row;
+  }
+  .foto2 .row .cam .text .twod .shda2 {
+    width: 100%;
+  }
+  .foto2 .row .cam .text .twod .shda2b {
+    width: 100%;
+  }
+  .foto2 .row .cam .text .twod .nab .n4a {
+    width: 100%;
+  }
+  .foto2 .row .cam .text .twod .nab .n4b {
+    width: 100%;
+  }
+}
+section {
+  width: 100%;
+  min-height: 900px;
+}
+section .sdiv {
+  width: 100%;
+  min-height: 900px;
+  display: flex;
+  flex-direction: column;
+}
+section .sdiv .sd1 {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+section .sdiv .sd1 p {
+  font-size: 1.8rem;
+}
+section .sdiv .sd1 p img {
+  width: 18px;
+  height: 18px;
+}
+section .sdiv .sd1 h1 {
+  font-size: 4rem;
+}
+section .sdiv .sd2 {
+  width: 100%;
+  min-height: 780px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+section .sdiv .sd2 div {
+  width: 22%;
+  height: 380px;
+  border: 2px solid black;
+  text-align: center;
+  padding: 70px 30px;
+}
+section .sdiv .sd2 div h2 {
+  font-size: 1.8rem;
+}
+section .sdiv .sd2 div p {
+  font-size: 1.6rem;
+}
+section .sdiv .sd2 div:hover {
+  background-color: rgb(228, 192, 192);
+  border: none;
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  section .sdiv .sd2 div {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 426px) {
+  section .sdiv .sd2 div {
+    width: 100%;
+  }
+}
+.section2 {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  min-height: 1000px;
+}
+.section2 .sec2 {
+  width: 100%;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+.section2 .sec2 .adem {
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+.section2 .sec2 .adem p {
+  font-size: 1.8rem;
+}
+.section2 .sec2 .adem p img {
+  width: 18px;
+  height: 18px;
+}
+.section2 .sec2 .adem h1 {
+  font-size: 4rem;
+}
+.section2 .sec2 .aden {
+  width: 100%;
+  min-height: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section2 .sec2 .aden .ademn {
+  width: 15%;
+  height: 700px;
+  border-left: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.section2 .sec2 .aden .ademn h3 {
+  font-size: 2.5rem;
+  position: relative;
+  left: 10px;
+}
+.section2 .sec2 .aden .ademn h3::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #ff6b00;
+  display: inline-block;
+  border-radius: 999999px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -20px;
+}
+.section2 .sec2 .aden .adres {
+  width: 75%;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section2 .sec2 .aden .adres .adtext {
+  width: 100%;
+  height: 30%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.section2 .sec2 .aden .adres .adtext div {
+  width: 30%;
+  height: 100%;
+  padding: 30px;
+}
+.section2 .sec2 .aden .adres .adtext div h2 {
+  font-size: 1.8rem;
+}
+.section2 .sec2 .aden .adres .adtext div h4 {
+  font-size: 1.5rem;
+}
+.section2 .sec2 .aden .adres .adtext div p {
+  font-size: 1.4rem;
+  margin-top: 30px;
+}
+.section2 .sec2 .aden .adres .adtext .asin {
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .section2 .sec2 .adem {
+    width: 100%;
+  }
+  .section2 .sec2 .aden .ademn {
+    display: none;
+  }
+  .section2 .sec2 .aden .adres {
+    width: 100%;
+  }
+  .section2 .sec2 .aden .adres .adtext .asin {
+    border: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section2 .sec2 .adem {
+    width: 100%;
+  }
+  .section2 .sec2 .aden .ademn {
+    display: none;
+  }
+  .section2 .sec2 .aden .adres {
+    width: 100%;
+  }
+  .section2 .sec2 .aden .adres .adtext {
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .section2 .sec2 .aden .adres .adtext div {
+    width: 100%;
+  }
+  .section2 .sec2 .aden .adres .adtext .asin {
+    border: none;
+  }
+}
+.section3 {
+  width: 100%;
+  min-height: 650px;
+}
+.section3 .tion3 {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.section3 .tion3 .qafan {
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+.section3 .tion3 .qafan p {
+  font-size: 1.8rem;
+}
+.section3 .tion3 .qafan p img {
+  width: 18px;
+  height: 18px;
+}
+.section3 .tion3 .qafan h1 {
+  font-size: 5.5rem;
+}
+.section3 .tion3 .qafan2 {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.section3 .tion3 .qafan2 .a {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgb(236, 215, 200);
+  padding: 30px;
+}
+.section3 .tion3 .qafan2 .a .aa {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  gap: 20px;
+}
+.section3 .tion3 .qafan2 .a .aa h2 {
+  font-size: 3rem;
+}
+.section3 .tion3 .qafan2 .a .aa p {
+  font-size: 1.6rem;
+}
+.section3 .tion3 .qafan2 .a p {
+  font-size: 1.8rem;
+}
+.section3 .tion3 .qafan2 .a:hover {
+  filter: brightness(80%);
+}
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+  .section3 .tion3 .qafan {
+    width: 100%;
+  }
+  .section3 .tion3 .qafan2 .a {
+    width: 47%;
+  }
+  .section3 .tion3 .qafan2 .c {
+    display: none;
+  }
+}
+@media screen and (max-width: 420px) {
+  .section3 .tion3 .qafan {
+    width: 100%;
+  }
+  .section3 .tion3 .qafan2 .a {
+    width: 100%;
+  }
+  .section3 .tion3 .qafan2 .c, .section3 .tion3 .qafan2 .b {
+    display: none;
+  }
+}
+.section4 {
+  width: 100%;
+  min-height: 1000px;
+}
+.section4 .das {
+  width: 100%;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section4 .das .vizit {
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.section4 .das .vizit p {
+  font-size: 1.8rem;
+}
+.section4 .das .vizit p img {
+  width: 18px;
+  height: 18px;
+}
+.section4 .das .vizit h1 {
+  font-size: 3rem;
+}
+.section4 .das .vizit ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+.section4 .das .vizit ul a {
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.section4 .das .vizit ul a:hover {
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+.section4 .das .vizit2 {
+  width: 100%;
+  min-height: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+.section4 .das .vizit2 .img1 {
+  width: 30%;
+  max-height: 400px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+.section4 .das .vizit2 .img1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.section4 .das .vizit2 .img1:hover {
+  filter: brightness(80%);
+}
+.section4 .das .vizit2 .img2 {
+  width: 65%;
+}
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+  .section4 .das .vizit {
+    width: 90%;
+  }
+  .section4 .das .vizit2 .img1 {
+    width: 47.5%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .section4 .das .vizit {
+    width: 90%;
+  }
+  .section4 .das .vizit2 .img1 {
+    width: 100%;
+  }
+}
+.section5 {
+  width: 100%;
+  min-height: 550px;
+}
+.section5 .tion5 {
+  width: 100%;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section5 .tion5 .repu1 {
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+.section5 .tion5 .repu1 p {
+  font-size: 1.8rem;
+}
+.section5 .tion5 .repu1 p img {
+  width: 18px;
+  height: 18px;
+}
+.section5 .tion5 .repu1 h1 {
+  font-size: 3.5rem;
+}
+.section5 .tion5 .repu2 {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.section5 .tion5 .repu2 div {
+  width: 10%;
+  height: 100px;
+  border: 4px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section5 .tion5 .repu2 div img {
+  width: 80%;
+  height: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.section5 .tion5 .repu2 div:hover img {
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .section5 .tion5 .repu1 {
+    width: 100%;
+  }
+  .section5 .tion5 .repu2 div {
+    width: 30%;
+    height: 200px;
+  }
+  .section5 .tion5 .repu2 .tat {
+    display: none;
+  }
+}
+@media screen and (max-width: 426px) {
+  .section5 .tion5 .repu1 {
+    width: 100%;
+  }
+  .section5 .tion5 .repu2 div {
+    width: 100%;
+    height: 250px;
+  }
+  .section5 .tion5 .repu2 .bat {
+    display: none;
+  }
+}
+.section6 {
+  width: 100%;
+  min-height: 750px;
+}
+.section6 .tion6 {
+  width: 100%;
+  min-height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section6 .tion6 .lat {
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.section6 .tion6 .lat p {
+  font-size: 1.8rem;
+}
+.section6 .tion6 .lat p img {
+  width: 18px;
+  height: 18px;
+}
+.section6 .tion6 .lat h1 {
+  font-size: 5.5rem;
+}
+.section6 .tion6 .jan {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+.section6 .tion6 .jan .araj {
+  width: 32%;
+  min-height: 600px;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 5px solid black;
+}
+.section6 .tion6 .jan .araj .dimej {
+  width: 100%;
+  height: 400px;
+}
+.section6 .tion6 .jan .araj .dimej img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section6 .tion6 .jan .araj .dimej:hover img {
+  filter: brightness(80%);
+}
+.section6 .tion6 .jan .araj .tata {
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section6 .tion6 .jan .araj .tata p {
+  font-size: 1.8rem;
+}
+.section6 .tion6 .jan .araj .tata h1 {
+  font-size: 2.7rem;
+}
+.section6 .tion6 .jan .araj .tata a {
+  text-decoration: none;
+  color: orange;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.section6 .tion6 .jan .araj .tata a:hover i {
+  margin-left: 5px;
+}
+@media screen and (max-width: 768px) {
+  .section6 .section6 .tion6 .lat {
+    width: 100%;
+  }
+  .section6 .section6 .tion6 .jan {
+    flex-direction: column;
+  }
+  .section6 .section6 .tion6 .jan .araj {
+    width: 100%;
+  }
+}
+
+.section7 {
+  width: 100%;
+  min-height: 750px;
+}
+.section7 .tion7 {
+  width: 100%;
+  min-height: 750px;
+}
+.section7 .tion7 .want {
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.section7 .tion7 .want p {
+  font-size: 1.8rem;
+}
+.section7 .tion7 .want p img {
+  width: 18px;
+  height: 18px;
+}
+.section7 .tion7 .want h1 {
+  font-size: 5rem;
+}
+.section7 .tion7 .bam {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  min-height: 550px;
+  gap: 4%;
+}
+.section7 .tion7 .bam .ada {
+  width: 66%;
+  height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+}
+.section7 .tion7 .bam .ada input {
+  width: 46%;
+  height: 75px;
+  padding-left: 10px;
+  border: 4px solid black;
+}
+.section7 .tion7 .bam .ada textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: 4px solid black;
+}
+.section7 .tion7 .bam .ada a {
+  width: 200px;
+  height: 40px;
+  background-color: orange;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+.section7 .tion7 .bam .ada a:hover {
+  background-color: black;
+  color: #ff6b00;
+}
+.section7 .tion7 .bam .dara {
+  width: 30%;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+}
+.section7 .tion7 .bam .dara .cart {
+  width: 100%;
+  height: 30%;
+  margin-bottom: 50px;
+  display: flex;
+  gap: 20px;
+}
+.section7 .tion7 .bam .dara .cart .icon {
+  width: 20%;
+  height: 75%;
+  background-color: rgb(238, 197, 187);
+  color: #ff6b00;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section7 .tion7 .bam .dara .cart div h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.section7 .tion7 .bam .dara .cart div a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+}
+.section7 .tion7 .bam .dara .cart div a:hover {
+  color: #ff6b00;
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .section7 .tion7 .want {
+    width: 100%;
+  }
+  .section7 .tion7 .bam {
+    flex-direction: column;
+  }
+  .section7 .tion7 .bam .ada, .section7 .tion7 .bam .dara {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 426px) {
+  .section7 .tion7 .want {
+    width: 100%;
+  }
+  .section7 .tion7 .bam {
+    flex-direction: column;
+  }
+  .section7 .tion7 .bam .ada, .section7 .tion7 .bam .dara {
+    width: 100%;
+  }
+  .section7 .tion7 .bam .ada input {
+    width: 100%;
+  }
+}
+footer {
+  width: 100%;
+  min-height: 400px;
+  background-color: rgb(67, 61, 61);
+}
+footer .foot {
+  width: 100%;
+  min-height: 400px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+footer .foot .waw {
+  width: 100%;
+  min-height: 350px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: white;
+}
+footer .foot .waw .arat {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .foot .waw .arat .img {
+  width: auto;
+  height: 40px;
+  z-index: 5;
+  color: #dfd7d7;
+}
+footer .foot .waw .arat p {
+  font-size: 1.6rem;
+}
+footer .foot .waw .arat h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+footer .foot .waw .arat a {
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+footer .foot .waw .arat a:hover {
+  color: rgb(231, 72, 23);
+}
+footer .foot .waw .arat div {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .foot .waw .arat div a {
+  width: 15%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  border-radius: 15px;
+}
+footer .foot .waw .arat div a:hover {
+  background-color: rgb(212, 132, 20);
+}
+footer .foot .waw .arat .bi {
+  color: coral;
+}
+footer .foot .ft {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .foot .ft div {
+  width: 30%;
+  margin-top: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+}
+footer .foot .ft div p {
+  font-size: 1.6rem;
+}
+footer .foot .ft div .terpri {
+  gap: 10px;
+}
+footer .foot .ft div .terpri a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+}
+footer .foot .ft div .terpri a:hover {
+  color: orange;
+}
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+  footer .foot .waw .arat {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 420px) {
+  footer .foot .waw .arat {
+    width: 100%;
+  }
+  footer .foot .ft {
+    flex-direction: column;
+  }
+  footer .foot .ft div {
+    width: 100%;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,99 @@
+.section4{
+    width: 100%;
+    min-height: 1000px;
+    .das{
+        width: 100%;
+        min-height: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .vizit{
+            width: 50%;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-align: center;
+
+            p {
+                font-size: 1.8rem;
+
+                img {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                list-style: none;
+                a{
+                    color: black;
+                    font-size: 1.5rem;
+                    text-decoration: none;
+                    &:hover{
+                        color: orange;
+                        border-bottom: 2px solid orange;
+                    }
+                }
+            }
+        }
+        .vizit2{
+            width: 100%;
+            min-height: 900px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5%;
+            .img1{
+                width: 30%;
+                max-height: 400px;
+                margin-bottom: 50px;
+                border-radius: 5px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 5px;
+                }
+                &:hover{
+                    filter: brightness(80%);
+                }
+            }
+            .img2{
+                width: 65%;
+            }
+        }
+    }
+}
+@media screen and (min-width:420px) and (max-width: 768px){
+    .section4{
+        .das{
+            .vizit{
+                width: 90%;
+            }
+            .vizit2{
+                .img1{
+                    width: 47.5%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 420px){
+    .section4{
+        .das{
+            .vizit{
+                width: 90%;
+            }
+            .vizit2{
+                .img1{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

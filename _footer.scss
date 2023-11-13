@@ -1,0 +1,133 @@
+footer {
+    width: 100%;
+    min-height: 400px;
+    background-color: rgb(67, 61, 61);
+
+    .foot {
+        width: 100%;
+        min-height: 400px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .waw {
+            width: 100%;
+            min-height: 350px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            color: white;
+
+            .arat {
+                width: 22%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                
+                .img {
+                    
+                    width: auto;
+                    height: 40px;
+                    z-index: 5;
+                    color: #dfd7d7;
+                    
+                }
+
+                p {
+                    font-size: 1.6rem;
+                }
+                h2{
+                    font-size: 2rem;
+                    margin-top: 20px;
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 1.7rem;
+                    &:hover{
+                        color: rgb(231, 72, 23);
+                    }
+                }
+                div{
+                    width: 100%;
+                    height: 40px;
+                    display: flex;
+                    justify-content: space-between;
+                    a{
+                        width: 15%;
+                        height: 100%;
+                        background-color: rgb(255, 255, 255);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 3rem;
+                        border-radius: 15px;
+                        &:hover{
+                            background-color: rgb(212, 132, 20);
+                        }
+                    }
+                }
+                .bi{
+                   color: coral;
+                }
+            }
+        }
+        .ft{
+            width: 100%;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            div{
+                width: 30%;
+                margin-top: 20px;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                color: white;
+                align-items: center;
+                p{
+                    font-size: 1.6rem;
+                }
+                .terpri{
+                 gap: 10px;
+              
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1.8rem;
+                    &:hover{
+                        color:orange;
+                    }
+                }
+            }
+            }
+        }
+    }
+}
+@media screen and (min-width:420px) and (max-width: 768px){
+    footer{
+        .foot{
+            .waw{
+                .arat{
+                    width: 45%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 420px){
+    footer{
+        .foot{
+            .waw{
+                .arat{
+                    width: 100%;
+                }
+            }
+            .ft{
+                flex-direction: column;
+                div{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

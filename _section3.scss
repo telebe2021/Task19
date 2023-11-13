@@ -1,0 +1,112 @@
+.section3 {
+    width: 100%;
+    min-height: 650px;
+
+    .tion3 {
+        width: 100%;
+        min-height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .qafan {
+            width: 50%;
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+
+            p {
+                font-size: 1.8rem;
+
+                img {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+
+            h1 {
+                font-size: 5.5rem;
+            }
+        }
+
+        .qafan2 {
+            width: 100%;
+            min-height: 400px;
+            display: flex;
+            justify-content: space-between;
+
+            .a {
+                width: 30%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                background-color: rgb(236, 215, 200);
+                padding: 30px;
+
+                .aa {
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    gap: 20px;
+
+                    h2 {
+                        font-size: 3rem;
+                    }
+
+                    p {
+                        font-size: 1.6rem;
+                    }
+                }
+
+                p {
+                    font-size: 1.8rem;
+                }
+
+                &:hover {
+                    filter: brightness(80%);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:420px) and (max-width: 768px) {
+    .section3 {
+        .tion3 {
+            .qafan {
+                width: 100%;
+            }
+
+            .qafan2 {
+                .a {
+                    width: 47%;
+                }
+
+                .c {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 420px) {
+    .section3 {
+        .tion3 {
+            .qafan {
+                width: 100%;
+            }
+
+            .qafan2 {
+                .a {
+                    width: 100%;
+                }
+
+                .c, .b {
+                    display: none;
+                }
+            }
+        }
+    }
+}

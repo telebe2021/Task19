@@ -1,0 +1,311 @@
+.foto2{
+    width: 100%;
+    height: 843px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .row{
+        width:100%;
+        height: 843px;
+        background-color: #1dce93;
+        flex-direction: row;
+        position: relative;
+        
+        .cam{
+            width: 100%;
+            height: 843px;
+            background-color:rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+    
+    .foto2a{
+        width: 42%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        // position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            
+        }
+         }
+    
+
+            .text{
+                width: 55%;
+                height: 100%;
+                background-color: rgb(255, 255, 255);
+                padding: 8% 3%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                gap: 30px;
+                position: relative;
+                .shda{
+                 width: 100%;
+                 height: 400px;
+                 display: flex;
+                flex-direction: column;
+                gap: 20px;
+                top: 40px;
+            
+             position: absolute;
+             .dad{
+                width: 230px;
+                 height: 30px;
+                 display: flex;
+                 flex-direction: row;
+                gap: 20px;
+             }
+                img{
+                    width: 25px;
+                    height:25px;
+                }
+            
+                h1{
+                    font-size: larger;
+                }
+             }
+                h3{
+                    font-size: 70px;
+                }
+                p{
+                    font-size: 20px;
+                }
+               
+               
+                .twod{
+                  width:100%;
+                  height: 50px;
+                  bottom: -50px;
+                  gap: 20px;
+                  position: relative;
+                .shda2{
+                    width: 30%;
+                    height: 50px;
+                    display: flex;
+                    flex-direction: row;
+                    position: absolute;
+                    gap: 10px;
+                    img{
+                        width: 40%;
+                        height:100%;
+                       
+                    }
+                    .spa{
+                        display: flex;
+                        flex-direction: column;
+                        width: 50%;
+                
+                    span{
+                        width: 100px;
+                        font-weight: 700;
+                        color: #e05510;
+                    }
+                    h1{
+                        font-size: 15px;
+                        
+                    }
+                }
+                }
+                .shda2b{
+                    width: 30%;
+                    height: 50px;
+                    display: flex;
+                    flex-direction: row;
+                    position: absolute;
+                    right: 0px;
+                    gap: 10px;
+                    img{
+                        width: 40%;
+                        height:100%;
+                       
+                       
+                    }
+                    .spa{
+                        display: flex;
+                        flex-direction: column;
+                        width: 50%;
+                    span{
+                        width: 100px;
+                        font-weight: 700;
+                       color: #e05510;
+                    }
+                    h1{
+                        font-size: 15px;
+                    }
+                  }
+                 }
+                 }
+              }
+    .nab{
+   width: 100%;
+   height: 160px;
+   background-color: #ffffff;
+   bottom: 125px;
+   display: flex;
+   position: absolute;
+   gap: 40px;
+              .n4a{
+                width: 100%;
+                height: 60px;
+                background-color: #ffffff;
+                position: absolute;
+                // bottom: 80px;
+                gap: 10px;
+                display: flex;
+                flex-direction: row;
+
+                .n1{
+                    width:50%;
+                    height: 60px;
+                    background-color: #ffffff;
+                    display: flex;
+                    flex-direction: row;
+                
+                        i{
+                            width: 25px;
+                            height:25px;
+
+                        }
+                    
+                        h1{
+                            font-size: larger;
+                        }
+
+                }
+            
+              }
+              .n4b{
+                width: 100%;
+                height: 60px;
+                background-color: #ffffff;
+                position: absolute;
+                bottom: 0px;
+                gap: 10px;
+                display: flex;
+                flex-direction: row;
+
+                .n1{
+                    width:50%;
+                    height: 60px;
+                    background-color: #ffffff;
+                    display: flex;
+                    flex-direction: row;
+                
+                        i{
+                            width: 25px;
+                            height:25px;
+
+                        }
+                    
+                        h1{
+                            font-size: larger;
+                        }
+
+                }
+        
+              }     
+            }
+              button{
+                width: 250px;
+                height:50px;
+                font-size: 25px;
+                border-radius: 10px;
+                background-color: rgb(208, 102, 25);
+                color: #faf5f5;
+                position: absolute;
+                left: 0px;
+
+                 bottom: 70px;
+                :hover{
+                    
+                        width: 250px;
+                        height: 50px;
+                        border-radius: 10px;
+                       background: blue;
+                       color: rgb(220, 70, 15);
+                   
+                }
+            }
+        
+        
+        }
+    }
+ }
+ @media screen and (min-width: 400px) and (max-width: 768px){
+    .foto2{
+        .row{
+            .cam{
+                .foto2a{
+                            width:100%
+                        }
+                        .text{
+                            .shda{
+                                .dad{
+                                    flex-direction: row;
+                                }
+                            }
+                            .twod{
+                                .shda2{
+                                    width: 50%;
+                                }
+                                .shda2b{
+                                    width: 50%;
+                                }
+                            .nab{
+                                .n4a{
+                                    width: 50%;
+                                }
+                                .n4b{
+                                    width: 50%};
+                                }
+                            }
+                        }
+             }
+       }
+   }
+}
+@media screen and (max-width: 400px){
+    .foto2{
+        .row{
+            .cam{
+                .foto2a{
+                    img{
+
+                
+                            width:100%
+            
+                            }
+                        }
+                        .text{
+                            .shda{
+                                .dad{
+                                    flex-direction: row;
+                                }
+                            }
+                            .twod{
+                                .shda2{
+                                    width: 100%;
+                                }
+                                .shda2b{
+                                    width: 100%;
+                                }
+                            .nab{
+                                .n4a{
+                                    width: 100%;
+                                }
+                                .n4b{
+                                    width: 100%};
+                                }
+                            }
+                        }
+             }
+       }
+   }
+}
