@@ -12,7 +12,11 @@
             text-align: center;
 
             p {
-                font-size: 1.8rem;
+                font-size: 1.6rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
 
                 img {
                     width: 18px;
@@ -21,7 +25,7 @@
             }
 
             h1 {
-                font-size: 5rem;
+                font-size: 3rem;
             }
         }
         .bam{
@@ -76,11 +80,9 @@
                     display: flex;
                     gap: 20px;
                     .icon{
-                        width: 20%;
-                        height: 75%;
                         background-color: rgb(238, 197, 187);
                         color:  #ff6b00;
-                        font-size: 4rem;
+                        font-size: 3.2rem;
                         display: flex;
                         justify-content: center;
                         align-items: center;

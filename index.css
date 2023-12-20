@@ -5,7 +5,7 @@
 }
 
 p {
-  font-family: monospace;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 h1 {
@@ -13,7 +13,7 @@ h1 {
 }
 
 h2 {
-  font-family: fantasy;
+  font-family: monospace;
 }
 
 h3 {
@@ -25,6 +25,14 @@ h3 {
   width: 100%;
   margin: auto;
   padding: 0 32px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
 }
 
 nav {
@@ -72,7 +80,6 @@ nav .ner .nerc a:hover {
 }
 .foto1 .row {
   width: 100%;
-  height: 843px;
   background-color: #1dce93;
   flex-direction: row;
   position: relative;
@@ -91,12 +98,16 @@ nav .ner .nerc a:hover {
   width: 114px;
 }
 .foto1 .row .cam .ulduz img {
-  position: absolute;
   height: 114px;
   width: 114px;
   top: 30px;
 }
-.foto1 .row .cam .sag {
+.foto1 .row .cam .ikili {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.foto1 .row .cam .ikili .sag {
   width: 55%;
   height: 100%;
   background-color: rgb(244, 225, 201);
@@ -106,7 +117,7 @@ nav .ner .nerc a:hover {
   gap: 30px;
   position: relative;
 }
-.foto1 .row .cam .sag .shda {
+.foto1 .row .cam .ikili .sag .shda {
   width: 230px;
   height: 30px;
   display: flex;
@@ -114,62 +125,72 @@ nav .ner .nerc a:hover {
   gap: 20px;
   position: relative;
 }
-.foto1 .row .cam .sag .shda img {
+.foto1 .row .cam .ikili .sag .shda img {
   width: 25px;
   height: 25px;
 }
-.foto1 .row .cam .sag .shda h1 {
+.foto1 .row .cam .ikili .sag .shda h1 {
   font-size: larger;
 }
-.foto1 .row .cam .sag h3 {
+.foto1 .row .cam .ikili .sag h3 {
   font-size: 70px;
 }
-.foto1 .row .cam .sag p {
+.foto1 .row .cam .ikili .sag p {
   font-size: 20px;
 }
-.foto1 .row .cam .sag button {
+.foto1 .row .cam .ikili .sag button {
   width: 250px;
   height: 50px;
   font-size: 25px;
   border-radius: 10px;
   background-color: rgb(208, 102, 25);
   color: #faf5f5;
-  position: absolute;
   left: 112px;
   bottom: 220px;
 }
-.foto1 .row .cam .sag button :hover {
+.foto1 .row .cam .ikili .sag button :hover {
   border-radius: 10px;
   color: rgb(220, 70, 15);
   width: 250px;
   height: 50px;
   background: blue;
 }
-.foto1 .row .cam .sag .shda2 {
+.foto1 .row .cam .ikili .sag .shda2 {
   width: 80px;
   height: 160px;
   position: absolute;
   bottom: 80px;
   right: 340px;
 }
-.foto1 .row .cam .sag .shda2 img {
+.foto1 .row .cam .ikili .sag .shda2 img {
   width: 100%;
-  height: 70%;
-  border: #1dce93;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-.foto1 .row .cam .sol {
+.foto1 .row .cam .ikili .sol {
   width: 38%;
   height: 100%;
   background-color: rgb(244, 225, 201);
   position: relative;
 }
-.foto1 .row .cam .sol img {
+.foto1 .row .cam .ikili .sol img {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
 }
 
+@media screen and (min-width: 420px) and (max-width: 768px) {
+  footer .foot .waw .arat {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .foto1 .row .cam .ikili {
+    flex-direction: column-reverse;
+  }
+}
 .foto2 {
   width: 100%;
   height: 843px;
@@ -440,7 +461,7 @@ section .sdiv .sd1 p img {
   height: 18px;
 }
 section .sdiv .sd1 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 section .sdiv .sd2 {
   width: 100%;
@@ -496,13 +517,17 @@ section .sdiv .sd2 div:hover {
 }
 .section2 .sec2 .adem p {
   font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 .section2 .sec2 .adem p img {
   width: 18px;
   height: 18px;
 }
 .section2 .sec2 .adem h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 .section2 .sec2 .aden {
   width: 100%;
@@ -626,23 +651,27 @@ section .sdiv .sd2 div:hover {
 }
 .section3 .tion3 .qafan p {
   font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
 }
 .section3 .tion3 .qafan p img {
   width: 18px;
   height: 18px;
 }
 .section3 .tion3 .qafan h1 {
-  font-size: 5.5rem;
+  font-size: 3.5rem;
 }
 .section3 .tion3 .qafan2 {
   width: 100%;
   min-height: 400px;
   display: flex;
+  gap: 10px;
   justify-content: space-between;
 }
 .section3 .tion3 .qafan2 .a {
-  width: 30%;
-  height: 100%;
+  width: calc(33% - 10px);
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -651,15 +680,19 @@ section .sdiv .sd2 div:hover {
 }
 .section3 .tion3 .qafan2 .a .aa {
   width: 100%;
-  height: 50%;
   display: flex;
-  gap: 20px;
+  gap: 10px;
+}
+.section3 .tion3 .qafan2 .a .aa img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 99999px;
 }
 .section3 .tion3 .qafan2 .a .aa h2 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .section3 .tion3 .qafan2 .a .aa p {
-  font-size: 1.6rem;
+  font-size: 0.9rem;
 }
 .section3 .tion3 .qafan2 .a p {
   font-size: 1.8rem;
@@ -710,13 +743,17 @@ section .sdiv .sd2 div:hover {
 }
 .section4 .das .vizit p {
   font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 .section4 .das .vizit p img {
   width: 18px;
   height: 18px;
 }
 .section4 .das .vizit h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 .section4 .das .vizit ul {
   display: flex;
@@ -795,6 +832,10 @@ section .sdiv .sd2 div:hover {
 }
 .section5 .tion5 .repu1 p {
   font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 .section5 .tion5 .repu1 p img {
   width: 18px;
@@ -871,13 +912,17 @@ section .sdiv .sd2 div:hover {
 }
 .section6 .tion6 .lat p {
   font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 .section6 .tion6 .lat p img {
   width: 18px;
   height: 18px;
 }
 .section6 .tion6 .lat h1 {
-  font-size: 5.5rem;
+  font-size: 3.5rem;
 }
 .section6 .tion6 .jan {
   width: 100%;
@@ -956,14 +1001,18 @@ section .sdiv .sd2 div:hover {
   text-align: center;
 }
 .section7 .tion7 .want p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 .section7 .tion7 .want p img {
   width: 18px;
   height: 18px;
 }
 .section7 .tion7 .want h1 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 .section7 .tion7 .bam {
   width: 100%;
@@ -1020,11 +1069,9 @@ section .sdiv .sd2 div:hover {
   gap: 20px;
 }
 .section7 .tion7 .bam .dara .cart .icon {
-  width: 20%;
-  height: 75%;
   background-color: rgb(238, 197, 187);
   color: #ff6b00;
-  font-size: 4rem;
+  font-size: 3.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1108,7 +1155,7 @@ footer .foot .waw .arat h2 {
 }
 footer .foot .waw .arat a {
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: 1.1rem;
 }
 footer .foot .waw .arat a:hover {
   color: rgb(231, 72, 23);

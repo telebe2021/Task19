@@ -18,6 +18,10 @@
 
             p {
                 font-size: 1.8rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
 
                 img {
                     width: 18px;
@@ -26,7 +30,7 @@
             }
 
             h1 {
-                font-size: 5.5rem;
+                font-size: 3.5rem;
             }
         }
 

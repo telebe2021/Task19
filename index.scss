@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 p{
-    font-family:monospace ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 
 }
 h1{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 h2{
-font-family: fantasy;
+font-family: monospace;
 }
 h3{
     font-family: Arial, Helvetica, sans-serif;
@@ -22,6 +22,15 @@ h3{
     margin: auto;
     padding: 0 32px;
 }
+a{
+    text-decoration: none;
+}
+button{
+    border: none
+}
+
+
+
 @import "nav";
 @import "header";
 @import "foto2";
